@@ -1,4 +1,4 @@
-## LOW LEVEL PROGRAMMING USING C LANGUAGE##
+## LOW LEVEL PROGRAMMING USING C LANGUAGE ##
 **Learning Objectives**
 *At the end of this project, i will have proper understanding on the following:*
 - Why C programming is awesome
