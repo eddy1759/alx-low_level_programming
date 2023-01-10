@@ -36,7 +36,7 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	for (hgt_idx = 0; hgt_idx < heigth; hgt_idx++)
+	for (hgt_idx = 0; hgt_idx < height; hgt_idx++)
 	{
 		for (wid_idx = 0; wid_idx < width; wid_idx++)
 			twoD[hgt_idx][wid_idx] = 0;
