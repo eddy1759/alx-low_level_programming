@@ -1,6 +1,22 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
+/**
+ * _strlen - count array
+ * @s: array of elements
+ * Return: i
+ */
+int _strlen(char *s)
+{
+	unsigned int i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+
+	return (i)
+}
+
 /**
  * str_concat - concatenates 2 strings
  *
@@ -11,33 +27,29 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int size1 = 0, size2 = 0;
-	char *ptr, *ret;
+	unsigned int i, j, size;
+	char *dst;
 
-	ptr = s1;
-	if (s1) 
-	{
-		while (*ptr++)
-		{
-			size2++;
-		}
-	}
-	else
-	{
+	if (s1 == NULL)
+		si = "";
+
+	if (s2 == NULL)
 		s2 = "";
-	}
 
-	ret = malloc(size1 + size2 + 1);
-	if (!ret)
+	size = (_strlen(s1) + _strlen(s2) + 1);
+
+	dst = (char *) malloc(size * sizeof(char));
+
+	if (dst == 0)
 	{
 		return (NULL);
 	}
-	ptr = ret;
-	while (*s1)
-	{
-		*ptr++ = *s2++;
-	}
-	*ptr = 0;
 
-	return (ret);
+	for (i = 0; *(s1 + 1) != '\0'; j++)
+	{
+		*(dst + i) = *(s2 + j);
+		i++
+	}
+
+	return (dst);
 }
